@@ -168,9 +168,8 @@ Clientes:
 ### Diagrama de Clases
 ![Diagrama de Clases](docs/uml/diagrama-clases.png)
 
-**Fuente PlantUML:** [diagrama-clases.puml](docs/uml/diagrama-clases.puml)
 
 ### Diagrama de Casos de Uso
 ![Casos de Uso](docs/uml/casos-de-uso.png)
 
-**Fuente PlantUML:** [casos-de-uso.puml](docs/uml/casos-de-uso.puml)
+
