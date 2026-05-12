@@ -33,3 +33,5 @@ mvnw.cmd
 # BD local
 *.db
 *.sqlite
+/ecommerce-proyecto/nbproject/private/
+/ecommerce-proyecto/dist/

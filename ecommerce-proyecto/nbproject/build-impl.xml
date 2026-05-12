@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:if="ant:if" xmlns:unless="ant:unless" default="-main-project-help" name="ecommerce-proyecto-impl">
+    <property file="nbproject/project.properties"/>
+    <property name="do.depend" value="true"/>
+    <property name="do.jar" value="true"/>
+    <property name="project.default.label" value="ecommerce-proyecto"/>
+    <import file="build-impl.xml"/>
+</project>

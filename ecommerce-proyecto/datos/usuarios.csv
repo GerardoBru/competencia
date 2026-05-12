@@ -1,0 +1,5 @@
+ID,Nombre,Email,Rol,Telefono,InfoAdicional1,InfoAdicional2,InfoAdicional3
+1,Juan Pérez,juan@email.com,Cliente,3105551234,Calle 10 #20,Bogotá,110111
+2,María García,maria@email.com,Cliente,3105555678,Carrera 5 #30,Medellín,050001
+3,Admin User,admin@email.com,Administrador,3015551111,Sistemas,,,
+4,pandi kun,pandikun@gmail.com,Cliente,3184519757,el soco soco,cartacho,110013

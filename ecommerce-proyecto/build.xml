@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ecommerce-proyecto" default="jar" basedir=".">
+    <description>Proyecto E-Commerce con Java Swing</description>
+    
+    <property file="nbproject/project.properties"/>
+    <property name="src.dir" value="src"/>
+    <property name="build.dir" value="build"/>
+    <property name="build.classes.dir" value="${build.dir}/classes"/>
+    <property name="dist.dir" value="dist"/>
+    <property name="dist.jar" value="${dist.dir}/ecommerce.jar"/>
+    <property name="javac.source" value="11"/>
+    <property name="javac.target" value="11"/>
+    
+    <target name="init">
+        <mkdir dir="${build.classes.dir}"/>
+        <mkdir dir="${dist.dir}"/>
+    </target>
+    
+    <target name="compile" depends="init">
+        <javac srcdir="${src.dir}" 
+               destdir="${build.classes.dir}" 
+               debug="true"
+               includeantruntime="false"
+               release="11"
+               encoding="UTF-8"/>
+    </target>
+    
+    <target name="jar" depends="compile">
+        <jar destfile="${dist.jar}" 
+             basedir="${build.classes.dir}"
+             manifest="manifest.mf"/>
+    </target>
+    
+    <target name="run" depends="jar">
+        <java jar="${dist.jar}" fork="true"/>
+    </target>
+    
+    <target name="clean">
+        <delete file="${dist.jar}" quiet="true" failonerror="false"/>
+        <delete dir="${build.dir}" quiet="true" failonerror="false"/>
+        <delete dir="${dist.dir}" quiet="true" failonerror="false"/>
+    </target>
+    
+    <target name="-main-project-help">
+        <echo message="Este es el script de construcción para el proyecto ecommerce-proyecto"/>
+        <echo message="Targets: compile, jar, run, clean"/>
+    </target>
+    
+</project>
